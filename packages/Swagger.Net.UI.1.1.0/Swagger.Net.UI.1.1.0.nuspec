@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Swagger.Net.UI</id>
+    <version>1.1.0</version>
+    <title>Swagger UI for .NET</title>
+    <authors>Mike Trionfo</authors>
+    <owners>Mike Trionfo</owners>
+    <licenseUrl>http://apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/wordnik/swagger-ui</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Swagger UI is written by the wordnik folks and allows one to interact with a REST API that is documented using the Swagger spec (including swagger's code gen tools).  This package makes the latest available for the .NET community.
+
+This is packaged with a pre-release version of Swagger.Net which emits the Swagger spec for the ASP.NET Web API.
+
+NOTE: Currently broken in IE. Use in other browser.</description>
+    <summary>Swagger UI is written by the wordnik folks and allows one to interact with a REST API that is documented using the Swagger spec.
+
+NOTE: Currently broken in IE. Use in other browser.</summary>
+    <tags>Swagger SwaggerUI HelpPage Documentation AspNet WebAPI AspNetWebApi Swagger.Net</tags>
+    <dependencies>
+      <dependency id="Swagger.Net" version="0.5.4" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

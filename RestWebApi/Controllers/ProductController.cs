@@ -17,7 +17,11 @@ namespace RestWebApi.Controllers
     {
         private AdventureWorksLT2008Entities db = new AdventureWorksLT2008Entities();
 
-        // GET api/Product
+        /// <summary>
+        /// Get all available products
+        /// </summary>
+        /// <returns>Collection of <see cref="Product">Product</see></returns>
+        /// <remarks>Additional implementation notes are available through the REMARKS XmlDoc element.</remarks>
         public IEnumerable<Product> GetProducts()
         {
             var products = db.Products;//.Include(p => p.ProductCategory);//.Include(p => p.ProductModel);
