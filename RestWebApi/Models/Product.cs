@@ -11,8 +11,7 @@ namespace RestWebApi.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
+    
     public partial class Product
     {
         public Product()
@@ -33,8 +32,6 @@ namespace RestWebApi.Models
         public System.DateTime SellStartDate { get; set; }
         public Nullable<System.DateTime> SellEndDate { get; set; }
         public Nullable<System.DateTime> DiscontinuedDate { get; set; }
-
-        public byte[] ThumbNailPhoto { get; set; }
         public string ThumbnailPhotoFileName { get; set; }
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }

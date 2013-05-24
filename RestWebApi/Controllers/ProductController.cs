@@ -13,7 +13,10 @@ using RestWebApi.Classes;
 
 namespace RestWebApi.Controllers
 {
-    public class ProductController : ApiController
+    /// <summary>
+    /// Add, Update, Create, Delete Products
+    /// </summary>
+    public class ProductController : ApiController //AuthorizedApiController
     {
         private AdventureWorksLT2008Entities db = new AdventureWorksLT2008Entities();
 
@@ -22,10 +25,10 @@ namespace RestWebApi.Controllers
         /// </summary>
         /// <returns>Collection of <see cref="Product">Product</see></returns>
         /// <remarks>Additional implementation notes are available through the REMARKS XmlDoc element.</remarks>
-        public IEnumerable<Product> GetProducts()
+        public IQueryable<Product> GetProducts()
         {
-            var products = db.Products;//.Include(p => p.ProductCategory);//.Include(p => p.ProductModel);
-            return products.AsEnumerable();
+            var products = db.Products;
+            return products;
         }
 
         // GET api/Product/5
@@ -53,6 +56,8 @@ namespace RestWebApi.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
+            product.ModifiedDate = DateTime.UtcNow;
+
             db.Entry(product).State = EntityState.Modified;
 
             try
@@ -72,6 +77,9 @@ namespace RestWebApi.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.rowguid = Guid.NewGuid();
+                product.ModifiedDate = DateTime.UtcNow;
+
                 db.Products.Add(product);
                 db.SaveChanges();
 

@@ -396,6 +396,11 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:RestWebApi.Controllers.ProductController">
+            <summary>
+            Add, Update, Create, Delete Products
+            </summary>
+        </member>
         <member name="M:RestWebApi.Controllers.ProductController.GetProducts">
             <summary>
             Get all available products

@@ -64,7 +64,6 @@
           <ScalarProperty Name="SellStartDate" ColumnName="SellStartDate" />
           <ScalarProperty Name="SellEndDate" ColumnName="SellEndDate" />
           <ScalarProperty Name="DiscontinuedDate" ColumnName="DiscontinuedDate" />
-          <ScalarProperty Name="ThumbNailPhoto" ColumnName="ThumbNailPhoto" />
           <ScalarProperty Name="ThumbnailPhotoFileName" ColumnName="ThumbnailPhotoFileName" />
           <ScalarProperty Name="rowguid" ColumnName="rowguid" />
           <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />

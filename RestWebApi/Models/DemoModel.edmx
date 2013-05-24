@@ -366,7 +366,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DemoModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="AdventureWorksLT2008Entities" p1:LazyLoadingEnabled="true" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+        <EntityContainer Name="AdventureWorksLT2008Entities" p1:LazyLoadingEnabled="false" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
           <EntitySet Name="Addresses" EntityType="DemoModel.Address" />
           <EntitySet Name="Customers" EntityType="DemoModel.Customer" />
           <EntitySet Name="CustomerAddresses" EntityType="DemoModel.CustomerAddress" />
@@ -495,7 +495,6 @@
           <Property Name="SellStartDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="SellEndDate" Type="DateTime" Precision="3" />
           <Property Name="DiscontinuedDate" Type="DateTime" Precision="3" />
-          <Property Name="ThumbNailPhoto" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="ThumbnailPhotoFileName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="rowguid" Type="Guid" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
@@ -815,7 +814,6 @@
                 <ScalarProperty Name="SellStartDate" ColumnName="SellStartDate" />
                 <ScalarProperty Name="SellEndDate" ColumnName="SellEndDate" />
                 <ScalarProperty Name="DiscontinuedDate" ColumnName="DiscontinuedDate" />
-                <ScalarProperty Name="ThumbNailPhoto" ColumnName="ThumbNailPhoto" />
                 <ScalarProperty Name="ThumbnailPhotoFileName" ColumnName="ThumbnailPhotoFileName" />
                 <ScalarProperty Name="rowguid" ColumnName="rowguid" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />

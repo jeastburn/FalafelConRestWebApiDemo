@@ -203,7 +203,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\DemoModelMetadata.cs" />
     <Compile Include="Models\Product.cs">
       <DependentUpon>DemoModel.tt</DependentUpon>
     </Compile>

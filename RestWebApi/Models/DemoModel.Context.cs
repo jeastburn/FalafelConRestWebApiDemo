@@ -18,6 +18,7 @@ namespace RestWebApi.Models
         public AdventureWorksLT2008Entities()
             : base("name=AdventureWorksLT2008Entities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
         }
     
